@@ -32,5 +32,8 @@
   },
   "scripts": {
     "test": "node_modules/.bin/grunt"
+  },
+  "dependencies": {
+    "webot": "~0.1.6"
   }
 }
