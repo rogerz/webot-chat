@@ -1,10 +1,10 @@
 'use strict';
 
-var webotChat = require('../lib/webot-chat.js');
+var bot = require('../lib/webot-chat.js')();
 require('should');
 
 describe('webot-chat', function () {
-  it('should export object', function () {
-    webotChat.should.be.type('object');
+  it('should create instance of Webot', function () {
+    bot.should.be.instanceof(require('webot').Webot);
   });
 });
